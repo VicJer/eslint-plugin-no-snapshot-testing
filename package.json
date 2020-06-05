@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-snapshot-testing",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,13 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "keywords": ["eslint","eslintplugin","no-snapshots","no-snapshot","jest"],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "no-snapshots",
+    "no-snapshot",
+    "jest"
+  ],
   "author": "",
   "license": "MIT"
 }
