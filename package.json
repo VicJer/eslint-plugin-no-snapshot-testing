@@ -1,0 +1,12 @@
+{
+  "name": "eslint-plugin-no-snapshot-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["eslint","eslintplugin","no-snapshots","no-snapshot","jest"],
+  "author": "",
+  "license": "MIT"
+}
