@@ -1,14 +1,21 @@
 {
   "name": "eslint-plugin-no-snapshot-testing",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Eslint rule to disallow snapshot testing.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./tests/lib/rules/no-snapshots.js",
+    "preversion": "npm test",
+    "prepublish": "npm test"
   },
   "engines": {
     "node": ">=0.10.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VicJer/eslint-plugin-no-snapshot-testing"
+  },
+  "homepage": "https://github.com/VicJer/eslint-plugin-no-snapshot-testing",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -16,7 +23,7 @@
     "no-snapshot",
     "jest"
   ],
-  "author": "",
+  "author": "Vic",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.1.0"

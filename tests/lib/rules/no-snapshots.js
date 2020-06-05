@@ -1,5 +1,5 @@
 "use strict"
-const rule = require("../../../index").create,
+const rule = require("../../../lib/rules/no-snapshots"),
     RuleTester = require("eslint").RuleTester;
 
 const ruleTester = new RuleTester();
@@ -10,12 +10,13 @@ ruleTester.run("no-snapshot-testing",rule,{
         {
             code: "expect().toMatchSnapshot()",
             errors:[{ messageId: 'notAllowed' }],
-            output:"Snapshot testing is disallowed"
+            output:''
         },
         {
             code: "expect().toMatchInlineSnapshot()",
             errors:[{ messageId: 'notAllowed' }],
-            output:"Snapshot testing is disallowed"
+            output:''
         }
     ]
 })
+
